@@ -1,0 +1,34 @@
+# Ignore Node.js Modules
+node_modules/
+
+# Ignore Logs and Temporary Files
+logs/
+*.log
+*.pid
+.DS_Store
+
+# Ignore Environment Configuration
+.env
+.env.*
+
+# Ignore Compiled Files (e.g., TypeScript)
+dist/
+*.js
+
+# Ignore UI Build Artifacts
+public/build/
+
+# Ignore Editor and IDE Files
+.vscode/
+.idea/
+
+# Ignore Dependency Lock Files
+yarn.lock
+package-lock.json
+
+# Ignore User-Specific Configuration
+.bash_history
+.npmrc
+
+# Ignore Generated Files
+.cache/
