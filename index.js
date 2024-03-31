@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 app.get('/jp', (req, res) => {
   console.log("enterd")
-  return res.status(201).send("ok");
+//  return res.status(201).send("ok");
 });
 
 app.use(require('./router/auth'));
