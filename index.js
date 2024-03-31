@@ -12,6 +12,10 @@ const port=process.env.PORT;
 require('./db/conn');
 require('./userschema/userschema');
 app.use(express.json());
+
+app.get('/',(req,res)=>{
+res.send("hi hello")
+});
 app.use(require('./router/auth'));
 
 
