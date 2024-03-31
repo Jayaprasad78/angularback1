@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 app.use(cors(
     {
-        origin:'https://angularback1.vercel.app/',
+        origin:'https://angularback1.vercel.app',
         methods: ["POST", "GET"],
         credentials: true
     }
