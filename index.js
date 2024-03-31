@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   res.send("hi hello");
 });
 app.get('/jp', (req, res) => {
-  res.send("hi jp route");
+  return res.status(201).json({ message: 'requested });
 });
 
 app.use(require('./router/auth'));
