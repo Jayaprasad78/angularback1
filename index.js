@@ -14,7 +14,7 @@ app.use(cors(
         credentials: true
     }
 ));
-app.use(cors());
+
 const port=process.env.PORT;
 
 require('./db/conn');
