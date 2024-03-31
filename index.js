@@ -27,6 +27,7 @@ app.get('/', (req, res) => {
   res.send("hi hello");
 });
 app.get('/jp', (req, res) => {
+  console.log("enterd")
   return res.status(201).json({ message: 'requested });
 });
 
