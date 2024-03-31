@@ -26,6 +26,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send("hi hello");
 });
+app.get('/jp', (req, res) => {
+  res.send("hi jp route");
+});
 
 app.use(require('./router/auth'));
 
