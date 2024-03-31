@@ -7,13 +7,14 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 app.use(express.static('public'));
 
-app.use(
-  cors({
-    origin: 'https://angularback1.vercel.app/',
-    methods: ["POST", "GET"],
-    credentials: true
-  })
-);
+app.use(function (req, res, next) {
+  // Enabling CORS
+  res.header("Access-Control-Allow-Origin", "https://angular-demo-eight.vercel.app");
+  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization");
+  next();
+});
+
 
 
 const port = process.env.PORT;
