@@ -27,7 +27,8 @@ app.get('/', (req, res) => {
   res.send("hi hello");
 });
 app.get('/jp', (req, res) => {
-  console.log("enterd")
+   res.send("hi jp");
+  // console.log("enterd")
 //  return res.status(201).send("ok");
 });
 
