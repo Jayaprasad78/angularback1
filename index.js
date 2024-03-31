@@ -6,6 +6,14 @@ app.use(cookieParser());
 const dotenv = require('dotenv');
 dotenv.config({path:'./config.env'});
 app.use(express.static('public'));
+
+app.use(cors(
+    {
+        origin: ["https://angular-demo-eight.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(cors());
 const port=process.env.PORT;
 
